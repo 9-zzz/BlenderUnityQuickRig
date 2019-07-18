@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 1086191142}
   - component: {fileID: 1086191141}
   - component: {fileID: 1086191140}
+  - component: {fileID: 1086191143}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -295,6 +296,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086191138}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1086191143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086191138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321682108be9c8949a2c982af2646e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101216485
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +324,7 @@ GameObject:
   - component: {fileID: 1101216487}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,10 +341,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cd5bc4d068abc4c9f56acea6ab76be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   speed: 5
   jumpSpeed: 6
-  canJump: 1
-  canMove: 1
 --- !u!54 &1101216487
 Rigidbody:
   m_ObjectHideFlags: 0
